@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             removeButton.disabled = true;
             try {
               const response = await fetch(
-                `/activities/${encodeURIComponent(name)}/signup?email=${encodeURIComponent(participant)}`,
+                `/activities/${encodeURIComponent(name)}/for?email=${encodeURIComponent(participant)}`,
                 { method: "DELETE" }
               );
               const result = await response.json();
